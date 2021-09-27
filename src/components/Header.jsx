@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
 
 import '../styles/components/Header.css';
+import ThemeButton from './ThemeButton';
 
 const Header = () => {
     const {
@@ -14,6 +15,7 @@ const Header = () => {
             <Link to="/">
                 <h1 className="Header-title">Platzi merch</h1>
             </Link>
+            <ThemeButton />
             <div className="Header-checkout">
                 <Link to="/checkout">
                     <i className="fas fa-shopping-basket  "></i>

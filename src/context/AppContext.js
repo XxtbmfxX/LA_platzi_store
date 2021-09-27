@@ -5,6 +5,12 @@ const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
     const [state, setState] = useState(useInitialState);
+    const [darkmode, setDarkmode] = useState(false);
+
+    const Themestyles = {
+        dark: { color: '#f2f2f2', background: '#000' },
+        ligth: { color: '#000', background: '#f2f2f2' },
+    };
 
     const addToCart = (payload) => {
         setState({
@@ -44,6 +50,9 @@ const AppProvider = ({ children }) => {
                 removeFromCart,
                 addToBuyer,
                 addNewOrder,
+                darkmode,
+                setDarkmode,
+                Themestyles,
             }}
         >
             {children}
