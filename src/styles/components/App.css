@@ -1,4 +1,8 @@
 h1 {
-  font-size: 30px;
-  color: blue;
+    font-size: 30px;
+    color: blue;
+}
+
+.Main {
+    background-color: black;
 }
